@@ -20,13 +20,18 @@
 // let resultado = num1+num2
 // alert ("el resultado de tu suma es" + resultado)
 
-let (prompt ('dame un valor A')); 
-let valorB=Number(prompt ('dame un valor B')) 
+//importante let a = Number(prompt("Dame el valor A"));
+// let b = Number(prompt("Dame el valor B"));
 
-let resultado = num1+num2
-let resultado = num1-num2
-let resultado = num1*num2
-let resultado = num1/num2
+// let suma = a + b;
+// let resta = a - b;
+// let multiplicacion = a * b;
+// let division = a / b;
 
-alert ("el resultado de tu suma es" + resultado,-resultado,)
+// alert("La suma es: " + suma);
+// alert("La resta es: " + resta);
+// alert("La multiplicación es: " + multiplicacion);
+//importante alert("La división es: " + division);
 
+
+console.log(`tu numero es ${num1}`)
