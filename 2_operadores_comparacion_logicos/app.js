@@ -1,11 +1,11 @@
 // //Boolean(..)
 
-// console.log( "5" == "5" , "5" == "5" )         //true
-// console.log( "5" === "5" , "5" === "5" )       //true
-// console.log( 5 === "5" , 5 === "5" )           //false
-// console.log( 5 == "5" , 5 == "5" )             //true
-// console.log( 5 === (3+2) , "5" === (3+2) )     //false
-// console.log( 5 === 5 , 5 === 5 )               //true
+// console.log( "5" == "5" , "5" == "5" )         
+// console.log( "5" === "5" , "5" === "5" )       
+// console.log( 5 === "5" , 5 === "5" )           
+// console.log( 5 == "5" , 5 == "5" )             
+// console.log( 5 === (3+2) , "5" === (3+2) )     
+// console.log( 5 === 5 , 5 === 5 )               
 
 // //concantenar (+)
 
@@ -20,18 +20,17 @@
 // let resultado = num1+num2
 // alert ("el resultado de tu suma es" + resultado)
 
-//importante let a = Number(prompt("Dame el valor A"));
-// let b = Number(prompt("Dame el valor B"));
+let valor_a = Number(prompt("dame un numero"));
+let valor_b = Number(prompt("dame otro numero"));
 
-// let suma = a + b;
-// let resta = a - b;
-// let multiplicacion = a * b;
-// let division = a / b;
+alert("los valores ingresados fueron "+valor_a+" y "+valor_b)
 
-// alert("La suma es: " + suma);
-// alert("La resta es: " + resta);
-// alert("La multiplicación es: " + multiplicacion);
-//importante alert("La división es: " + division);
+alert("el resultado de la suma es "+(valor_a+valor_b)+'\n'+
+"el resultado de la resta es "+(valor_a-valor_b)+'\n'+
+"el resultado de la multiplicación "+(valor_a*valor_b)+'\n'+
+"el resultado de la división es "+(valor_a/valor_b))
+
+alert(" Para finalizar, "+(valor_a+valor_b)+" que fue la suma entre los valores pedidos al usuario mas, la multiplicación entre 10 es igual a: "+'\n'+(valor_a+valor_b)*10)
 
 
-console.log(`tu numero es ${num1}`)
+
