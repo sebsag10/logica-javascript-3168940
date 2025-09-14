@@ -1,0 +1,68 @@
+/* Reset y tipografía */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+/* Título */
+h1 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Pantalla del contador */
+.pantalla {
+  font-size: 5rem;
+  font-weight: bold;
+  background: #1f4068;
+  padding: 20px 60px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.pantalla:hover {
+  transform: scale(1.05);
+}
+
+/* Botones */
+button {
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn-menos {
+  background: #e63946;
+  color: white;
+}
+
+.btn-mas {
+  background: #06d6a0;
+  color: white;
+}
+
+/* Hover y animación */
+button:hover {
+  transform: translateY(-5px) scale(1.1);
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.95);
+}
