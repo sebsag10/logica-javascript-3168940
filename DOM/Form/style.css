@@ -1,0 +1,142 @@
+body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #222;
+      }
+
+      /* Contenedor principal */
+      #form-section,
+      #resultado {
+        background: #fff;
+        padding: 30px 25px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+        display: none;
+      }
+
+      #form-section {
+        display: block;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        color: #0077ff;
+      }
+
+      label {
+        display: block;
+        margin-top: 12px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+        color: #444;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 6px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+        background-color: #fafafa;
+        color: #333;
+      }
+
+      input[type="text"]:focus,
+      select:focus {
+        outline: none;
+        border-color: #0077ff;
+        background-color: #fff;
+      }
+
+      p {
+        margin-top: 18px;
+        margin-bottom: 8px;
+        font-weight: bold;
+        font-size: 15px;
+        color: #0077ff;
+      }
+
+      /* Radios */
+      input[type="radio"] {
+        margin-right: 6px;
+        accent-color: #0077ff;
+      }
+
+      label[for="gatos"],
+      label[for="mapaches"],
+      label[for="perros"] {
+        display: inline-block;
+        margin-right: 12px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      label[for="gatos"]:hover {
+        color: #ff9800;
+      }
+
+      label[for="mapaches"]:hover {
+        color: #795548;
+      }
+
+      label[for="perros"]:hover {
+        color: #4caf50;
+      }
+
+      /* Botón principal */
+      .button,
+      #cerrarSesion {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+        color: #fff;
+      }
+
+      .button {
+        background-color: #0077ff;
+      }
+
+      .button:hover {
+        background-color: #005bcc;
+      }
+
+      #cerrarSesion {
+        background-color: #e53935;
+      }
+
+      #cerrarSesion:hover {
+        background-color: #b71c1c;
+      }
+
+      /* Resultado */
+      #resultado h2 {
+        color: #0077ff;
+        margin-bottom: 10px;
+      }
+
+      #resultado img {
+        max-width: 100%;
+        border-radius: 12px;
+        margin-top: 15px;
+      }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario Interactivo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="form-section">
+      <h1>Formulario</h1>
+      <form id="customForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="color">Color</label>
+        <select name="color" id="color" required>
+          <option value="" disabled selected>Ver Más</option>
+          <option value="green">Verde</option>
+          <option value="red">Rojo</option>
+          <option value="black">Negro</option>
+        </select>
+
+        <p>Elige Tu Favorito</p>
+
+        <input type="radio" id="gatos" name="equipo" value="gatos" required />
+        <label for="gatos">Gatos</label>
+
+        <input type="radio" id="mapaches" name="equipo" value="mapaches" />
+        <label for="mapaches">Mapaches</label>
+
+        <input type="radio" id="perros" name="equipo" value="perros" />
+        <label for="perros">Perros</label>
+
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
+
+    <section id="resultado">
+      <h2 id="saludo"></h2>
+      <p id="equipoTexto"></p>
+      <img id="animalImg" src="" alt="Animal favorito" />
+      <br />
+      <button id="cerrarSesion">Cerrar sesión</button>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
