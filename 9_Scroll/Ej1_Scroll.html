@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Scroll</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    #main {
+      width: 300px;
+      height: 300px;
+      background: tomato;
+      overflow: auto;
+      position: relative;
+    }
+
+    #child {
+      width: 600px;
+      height: 600px;
+    }
+
+    #datoValor {
+      position: fixed;
+      font-size: 2em;
+      margin: 10px;
+    }
+
+    #pelota {
+      position: fixed; /* La pelota siempre visible en la ventana */
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background: blue;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="main">
+      <div id="child">
+        <div id="datoValor">
+          <p class="valor-vertical">V: 0</p>
+          <p class="valor-horizontal">H: 0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pelota"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
