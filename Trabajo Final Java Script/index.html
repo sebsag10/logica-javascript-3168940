@@ -15,7 +15,7 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#proyecto">Proyecto</a></li>
         <li><a href="#galeria">Galería</a></li>
-        <li><a href="#Form">Fromulario</a></li>
+        <li><a href="#Formulario">Formulario</a></li>
       </ul>
     </nav>
     <section id="inicio">
@@ -65,17 +65,58 @@
 <p class="descripcion ">Aquí aparecerá la descripción de la imagen</p>
 <section id="galeria">
   <div class="collage">
-<img src="img/collage_img1.png" 
-     name="Elkin Ramírez" 
-     data-text='"Joven músico de Medellín con guitarra negra, determinado a inspirar y desafiar la oscuridad con su música."' 
-     alt="imagen 1">
 
-    <img src="img/collage_img2.png" name="Padre de Elkin" data-text="Figura paterna sabia y afectuosa, guía de Elkin a través de recuerdos y enseñanzas, fuente de inspiración." alt="imagen 2">
-    <img src="img/collage_img3.png" name="El cuervo" data-text="Ave misteriosa de plumaje brillante, observador silencioso y símbolo de vigilancia y guía sobre la ciudad." alt="imagen 3">
-    <img src="img/collage_img4.png" name="La Sombra" data-text="Entidad abstracta y amorfa, oscura y sin rostro, que representa miedo, indiferencia y apatía en la ciudad." alt="imagen 4">
+    <img class="card-personaje"
+         src="img/collage_img1.png"
+         name="Elkin Ramírez"
+         data-text="Joven músico de Medellín con guitarra negra, determinado a inspirar y desafiar la oscuridad con su música."
+         alt="Elkin Ramírez">
+
+    <img class="card-personaje"
+         src="img/collage_img2.png"
+         name="Padre de Elkin"
+         data-text="Figura paterna sabia y afectuosa, guía de Elkin a través de recuerdos y enseñanzas, fuente de inspiración."
+         alt="Padre de Elkin">
+
+    <img class="card-personaje"
+         src="img/collage_img3.png"
+         name="El cuervo"
+         data-text="Ave misteriosa de plumaje brillante, observador silencioso y símbolo de vigilancia y guía sobre la ciudad."
+         alt="El cuervo">
+
+    <img class="card-personaje"
+         src="img/collage_img4.png"
+         name="La Sombra"
+         data-text="Entidad abstracta y amorfa, oscura y sin rostro, que representa miedo, indiferencia y apatía en la ciudad."
+         alt="La Sombra">
+
   </div>
 </section>
 
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<form id="Formulario">
+  <h2 class="titulo">Elige tu personaje favorito</h2>
+
+  <label for="nombre">Tu nombre:</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+  <label for="personaje">Personaje favorito:</label>
+  <select id="personaje" name="personaje" required>
+    <option value="" disabled selected>Selecciona un personaje</option>
+    <option value="Elkin Ramírez">Elkin Ramírez</option>
+    <option value="Padre de Elkin">Padre de Elkin</option>
+    <option value="El cuervo">El Cuervo</option>
+    <option value="La Sombra">La Sombra</option>
+  </select>
+
+  <button class="enviar" type="submit">Enviar</button>
+</form>
+
+<footer class="footer">a</footer>
  
 
     <script src="app.js"></script>

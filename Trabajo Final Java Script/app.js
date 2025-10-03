@@ -2,6 +2,7 @@ const cardInicio = document.getElementById("inicio");
 const img_1 = document.querySelector(".img_1 img");
 const img_2 = document.querySelector("img_2 img");
 const proyecto = document.getElementById("proyecto");
+const Formulario=document.getElementById("Formulario")
 
 cardInicio.addEventListener("mouseenter", () => {
   img_1.style.boxShadow = "0 0 20px 5px red";
@@ -12,6 +13,15 @@ cardInicio.addEventListener("mouseleave", () => {
   cardInicio.style.boxShadow = "none";
   img_1.style.boxShadow = "none";
 });
+
+Formulario.addEventListener("mouseenter", () => {
+  Formulario.style.boxShadow = "0 0 20px 5px red";
+});
+
+Formulario.addEventListener("mouseleave", () => {
+  Formulario.style.boxShadow = "none";
+});
+
 
 proyecto.addEventListener("mouseenter", () => {
   proyecto.style.boxShadow = "0 0 20px 5px red";
@@ -49,3 +59,6 @@ document.getElementById("customForm").addEventListener("submit", function (e) {
   const descripcion = document.getElementById("descripcion");
   const personajeImg = document.getElementById("personajeImg");
 })
+
+
+

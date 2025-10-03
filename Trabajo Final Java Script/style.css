@@ -21,6 +21,30 @@ html {
   font-size: 35px;
 }
 
+nav ul li a,
+form {
+  display: inline-block; /* Necesario para que funcione transform */
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover,
+form:hover {
+  transform: scale(1.05);
+}
+
+.img_1:hover,
+.img_2:hover,
+#proyecto:hover {
+  transform: scale(1.05);
+}
+
+#inicio,
+.img_1:hover,
+.img_2:hover,
+#proyecto {
+  transition: transform 0.3s ease-in-out;
+}
+
 a {
   color: inherit; /* hereda el color del padre (ej: si el texto es blanco, el link también) */
   text-decoration: none;
@@ -158,6 +182,7 @@ nav ul li a:hover {
 
 .collage img:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px 5px red;
 }
 .descripcion {
   text-align: center;
@@ -166,3 +191,59 @@ nav ul li a:hover {
   margin-bottom: 20 px;
 }
 
+.card-personaje {
+  object-fit: cover;
+  border: solid 1px red;
+  border-radius: 20px;
+}
+hr {
+margin: 0 auto;
+  width: 60%;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  margin-top: 15px;
+}
+
+hr:hover,
+.img_2 img:hover {
+  box-shadow: 0 0 10px 2px red;
+  transform: scale(1.05);
+}
+
+form h2 {
+  margin: 0 0 20px 0; /* quita margen arriba, solo abajo */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* uno debajo del otro */
+  gap: 10px; /* espacio entre cada campo */
+  width: 45%;
+  margin: 20px auto;
+  color: white;
+  border: solid 4px red;
+  border-radius: 5px;
+  padding: 10px;
+}
+input[type="text"],
+select,
+textarea {
+  color: white; /* color del texto que se escribe */
+  background-color: #000000; /* fondo del área */
+  border: 2px solid rgb(255, 0, 0); /* borde */
+  padding: 10px;
+}
+
+.enviar {
+  background-color: rgb(255, 0, 0);
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 10px;
+}
