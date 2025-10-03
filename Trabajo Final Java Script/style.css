@@ -1,0 +1,168 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  list-style: none; /* quita las viñetas */
+  margin: 0; /* elimina márgenes que pone el navegador */
+  padding: 0; /* elimina el espacio interno */
+  margin: 0;
+  padding: 0;
+  border: solid 1px rgb(0, 0, 0);
+
+  background-color: rgb(0, 0, 0);
+}
+.justificado {
+  font-size: 20px;
+  text-align: justify; /* justifica el texto */
+}
+.titulo {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+a {
+  color: inherit; /* hereda el color del padre (ej: si el texto es blanco, el link también) */
+  text-decoration: none;
+  color: white; /* quita la línea debajo */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; /* quita negritas fuertes si no las quieres */
+  line-height: 1.4; /* da un poco de aire entre líneas */
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 0 5%;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  gap: 60px;
+}
+
+nav ul li a:hover {
+  color: red; /* solo el link cambia */
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+  height: 400px;
+  margin: 100px auto;
+  border-top: 1px solid red; /* borde arriba */
+  border-left: 1px solid red; /* borde izquierdo */
+  border-right: 1px solid red; /* borde derecho */
+  border-bottom: none; /* sin borde abajo */
+  border-radius: 20px; /* mantiene esquinas redondeadas */
+  overflow: hidden;
+  padding: 50px;
+  gap: 20px;
+}
+
+.img_1 img {
+  max-width: 350px; /* no se hace más ancho que esto */
+  max-height: 350px;
+  object-fit: cover;
+  border: solid 1px red;
+  border-radius: 20px; /* opcional: recorta para llenar el espacio */
+}
+
+.img_1 {
+  flex: 1;
+}
+
+.texto_1 {
+  gap: 10px;
+  flex: 1;
+}
+
+#proyecto {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+  height: 400px;
+  margin: 100px auto;
+  border-top: 1px solid red; /* borde arriba */
+  border-left: 1px solid red; /* borde izquierdo */
+  border-right: 1px solid red; /* borde derecho */
+  border-bottom: none; /* sin borde abajo */
+  border-radius: 20px; /* mantiene esquinas redondeadas */
+  overflow: hidden;
+  padding: 50px;
+  gap: 20px;
+}
+.img_2 img {
+  max-width: 350px; /* no se hace más ancho que esto */
+  max-height: 350px;
+  object-fit: cover;
+  border: solid 1px red;
+  border-radius: 20px; /* opcional: recorta para llenar el espacio */
+}
+
+.texto_2 {
+  flex: 1;
+  width: 80%;
+}
+.img_2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+/* ********************************************* */
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.screen {
+  display: block;
+  margin: 0 auto 30px;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.collage {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.collage img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.collage img:hover {
+  transform: scale(1.05);
+}
+.descripcion {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 20 px;
+}
+
