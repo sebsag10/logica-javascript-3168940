@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   list-style: none; /* quita las viñetas */
   margin: 0; /* elimina márgenes que pone el navegador */
@@ -197,7 +198,7 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 hr {
-margin: 0 auto;
+  margin: 0 auto;
   width: 60%;
   height: 5px;
   background-color: rgb(0, 0, 0);
@@ -243,7 +244,19 @@ textarea {
   width: 25%;
   margin: 0 auto;
 }
+.hr_visible {
+  border: solid 0.1px white;
+}
+#footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 30px;
+  flex-direction: column;
+  padding: 20px;
+}
 
-.footer {
-  margin-top: 10px;
+.redes a svg {
+  width: 80px;
+  height: 80px;
 }
